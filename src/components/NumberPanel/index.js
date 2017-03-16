@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import * as React from 'react'
 import { buttonStyle } from './styles'
 import { css } from 'glamor'
 

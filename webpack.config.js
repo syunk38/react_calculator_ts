@@ -6,21 +6,16 @@ const srcDir = path.join(rootDir, '/src')
 module.exports = {
   context: srcDir,
   entry: {
-    javascript: './index.js',
-    html: './index.html'
+    javascript: './index.tsx'
   },
   output: {
     path: distDir,
     filename: 'bundle.js'
   },
-
   devServer: {
-    contentBase: 'dist',
     port: 1337
   },
-
   devtool: 'inline-source-map',
-
   module: {
     loaders: [
       {
@@ -28,8 +23,12 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015', 'react-hmre']
+          presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader'
       },
       {
         test: /\.html$/,

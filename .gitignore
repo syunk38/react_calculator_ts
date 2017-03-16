@@ -3,3 +3,4 @@ dist/*
 !.keep
 npm-debug.log
 yarn-error.log
+.vscode

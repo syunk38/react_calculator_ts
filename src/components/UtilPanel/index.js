@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import * as React from 'react'
 import styles from './styles'
 
 const UtilButton = ({children, onPush}) => (
@@ -11,10 +11,6 @@ const UtilPanel = ({onClear}) => {
       <UtilButton onPush={onClear}>AC</UtilButton>
     </div>
   )
-}
-
-UtilPanel.propTypes = {
-  onClear: React.PropTypes.func
 }
 
 export default UtilPanel

@@ -1,5 +1,5 @@
 // library
-import React, { Component, PropTypes } from 'react'
+import * as React from 'react'
 // constants
 import { NEUTRAL } from '../../constants/modes'
 // components
@@ -14,7 +14,7 @@ import buildNewValue from './buildNewValue'
 // Styles
 import styles from './styles'
 
-export default class Calculator extends Component{
+export default class Calculator extends Component {
   constructor() {
     super()
     this.state = {
