@@ -1,6 +1,7 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import Calculator from './components/Calculator'
+import { Calculator } from './components/Calculator'
+
 // CSSリセット
 import 'glamor-reset'
 

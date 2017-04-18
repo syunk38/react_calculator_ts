@@ -2,12 +2,12 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "sourceMap": true,
-        "module": "es6",
-        "target": "es5",
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "es6",
         "allowJs": true,
         "jsx": "react",
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
         "lib": [
             "es2015",
             "es2016",
@@ -16,9 +16,9 @@
         ]
     },
     "include": [
-        "src"
+        "./src/**/*"
     ],
-     "exclude": [
+    "exclude": [
         "node_modules"
     ]
 }

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import styles from './styles'
 import { NEUTRAL, ADDITION, SUBSTARCTION, MULTIPLICATION, DIVISION } from '../../constants/modes'
 
@@ -17,11 +17,5 @@ const FunctionPanel = ({onClear, onSetMode, onExecute}) => {
     </div>
   )
 }
-
-FunctionPanel.propTypes = {
-  onClick: React.PropTypes.func
-}
-
-
 
 export default FunctionPanel

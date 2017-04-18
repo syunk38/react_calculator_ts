@@ -13,22 +13,28 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
+    contentBase: srcDir,
     port: 1337
   },
   devtool: 'inline-source-map',
+  resolve: {
+    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+  },
   module: {
+    preLoaders: [
+      {
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript'
+      }
+    ],
     loaders: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: 'babel',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015', 'stage-2']
         }
-      },
-      {
-        test: /\.tsx?$/,
-        loader: 'ts-loader'
       },
       {
         test: /\.html$/,

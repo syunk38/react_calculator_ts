@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { buttonStyle } from './styles'
 import { css } from 'glamor'
 
@@ -31,10 +31,6 @@ const NumberPanel = ({onAppendNumber}) => {
       </div>
     </div>
   )
-}
-
-NumberPanel.propTypes = {
-  onAppendNumber: React.PropTypes.func
 }
 
 export default NumberPanel
