@@ -1,8 +1,15 @@
 {
     "compilerOptions": {
         "outDir": "./dist/",
-        "sourceMap": true,
+        "sourceMap": false,
         "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitUseStrict": false,
         "module": "commonjs",
         "moduleResolution": "node",
         "target": "es6",

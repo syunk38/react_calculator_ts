@@ -1,6 +1,7 @@
 import { NEUTRAL } from '../../constants/modes'
+import { calculatorStateType } from './calculatorStateType'
 
-export default (state, value) => {
+export default (state:calculatorStateType, value:number) :number | string => {
   if (state.displayValue === "0") {
     return value
   }
